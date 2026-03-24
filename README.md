@@ -12,12 +12,14 @@ AIAgents/
 ├── playwright.ini         # Playwright configuration
 ├── .env.example           # Environment variables template
 ├── src/                   # Source code directory
-│   └── __init__.py
+│   ├── __init__.py
+│   └── browser.py         # Browser automation utilities
 ├── tests/                 # Test directory
 │   ├── __init__.py
-│   └── test_example.py
+│   ├── test_example.py    # Basic Playwright tests
+│   └── test_registration_e2e.py  # E2E registration tests
 └── scripts/               # Utility scripts
-    └── setup_browsers.py
+    └── setup_browsers.py  # Setup script for browsers and dependencies
 ```
 
 ## Installation
@@ -28,9 +30,10 @@ AIAgents/
 
 ### Setup Steps
 
-1. **Clone or navigate to the project directory**
+1. **Clone the repository**
    ```bash
-   cd c:\Users\sohit\OneDrive\Desktop\AIAgents
+   git clone https://github.com/sohit7765/AIAgents.git
+   cd AIAgents
    ```
 
 2. **Create a virtual environment** (optional but recommended)
@@ -55,6 +58,11 @@ AIAgents/
 ### Running Tests
 ```bash
 pytest tests/
+```
+
+### Running E2E Registration Tests
+```bash
+pytest tests/test_registration_e2e.py -v
 ```
 
 ### Running a Script
