@@ -1,5 +1,9 @@
 # Playwright Python Project
 
+[![CI](https://github.com/sohit7765/AIAgents/actions/workflows/playwright.yml/badge.svg)](https://github.com/sohit7765/AIAgents/actions/workflows/playwright.yml)
+[![Python Version](https://img.shields.io/badge/python-3.11-blue.svg)](https://python.org)
+[![Playwright](https://img.shields.io/badge/playwright-1.58.0-green.svg)](https://playwright.dev)
+
 A Python project for browser automation and testing using Playwright.
 
 ## Project Structure
@@ -81,6 +85,25 @@ python scripts/setup_browsers.py
 - [Playwright Python Documentation](https://playwright.dev/python/)
 - [Pytest Documentation](https://docs.pytest.org/)
 
-## License
+## CI/CD Pipeline
 
-MIT
+This project uses GitHub Actions for continuous integration and testing. The CI pipeline:
+
+- **Runs on**: Every push and pull request to main/master branches
+- **Tests on**: Ubuntu and Windows with Chromium, Firefox, and WebKit browsers
+- **Generates**: Test reports and screenshots as artifacts
+- **Special E2E**: Runs comprehensive E2E registration tests on main branch pushes
+
+### Workflow Features
+
+- **Multi-browser testing**: Tests run on Chromium, Firefox, and WebKit
+- **Cross-platform**: Tests on both Ubuntu and Windows
+- **Parallel execution**: Matrix strategy for faster CI runs
+- **Artifact uploads**: Screenshots and test results saved for 30 days
+- **E2E focus**: Dedicated job for critical user journey tests
+
+### Viewing Test Results
+
+1. Go to the [Actions tab](https://github.com/sohit7765/AIAgents/actions) in your repository
+2. Click on the latest workflow run
+3. Download artifacts from the "Artifacts" section to view screenshots and test reports

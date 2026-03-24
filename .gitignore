@@ -45,3 +45,15 @@ videos/
 
 # Playwright
 .playwright/
+
+# CI/CD
+test-results/
+junit-reports/
+allure-results/
+.coverage.*
+coverage.xml
+*.log
+
+# Temporary files
+*.tmp
+*.temp
