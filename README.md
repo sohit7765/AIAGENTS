@@ -107,3 +107,5 @@ This project uses GitHub Actions for continuous integration and testing. The CI 
 1. Go to the [Actions tab](https://github.com/sohit7765/AIAgents/actions) in your repository
 2. Click on the latest workflow run
 3. Download artifacts from the "Artifacts" section to view screenshots and test reports
+
+**🚀 CI/CD Pipeline Active!** - Automated testing is now running on every code change.
