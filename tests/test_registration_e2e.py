@@ -9,6 +9,7 @@ import uuid
 
 
 @pytest.mark.asyncio
+@pytest.mark.e2e
 async def test_register_user_e2e():
     """
     End-to-end test that:
@@ -105,6 +106,7 @@ async def test_register_user_e2e():
 
 
 @pytest.mark.asyncio
+@pytest.mark.e2e
 async def test_navigate_and_register_flow():
     """
     Alternative E2E test with more detailed steps and error handling
