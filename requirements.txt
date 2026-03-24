@@ -3,3 +3,5 @@ pytest==7.4.4
 pytest-playwright==0.5.1
 pytest-asyncio==0.23.3
 python-dotenv==1.0.0
+openai
+requests
