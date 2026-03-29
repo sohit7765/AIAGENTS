@@ -12,4 +12,5 @@ def divide(a, b):
         raise ValueError("Cannot divide by zero")
     return a / b
 
-print
+print(divide(10, 2))
+print(divide(10, 0))    
